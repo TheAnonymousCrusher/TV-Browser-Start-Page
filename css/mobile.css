@@ -1,0 +1,47 @@
+ /* Mobile */
+.mobile {
+    background: black;
+    color: white;
+    text-align: center;
+    
+    height: 100vh;
+    width: 100%;
+    display: none;
+    padding-bottom: 20px;
+  }
+
+h1.shrug {
+    font-size: 20vw;
+    /* margin-top: 30vh; */
+    display: none;
+    font-family: Arial;
+    font-weight: bolder;
+  }
+  
+h2.shrug {
+    font-size: 5vw;
+    font-weight: bold;
+    display: none;
+    font-family: Arial;
+    color: #ff0000;
+  }
+  
+h3.shrug {
+    font-size: 3vw;
+    display: none;
+    font-family: Arial;
+  }
+  
+@media (max-width: 950px) {
+    #time, #date, .btn-content {
+      display: none;
+    } 
+  
+    .mobile, h1.shrug, h2.shrug, h3.shrug {
+      display: block;
+    }
+
+    .bookmarks > a {
+      display: none;
+  }
+}

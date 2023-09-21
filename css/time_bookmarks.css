@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'FF';
+    src: url("../assets/futuristic-font.ttf") format('truetype');
+  }
+  
+html {
+    overflow: none;
+    overflow-x: none;
+    overflow-y: none;
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'FF', Impact;
+    font-weight: normal;
+    
+    background-color: rgb(4, 4, 30);
+    
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    max-height: 100vh;
+  }
+  
+
+
+
+#time, #date {
+    color: yellow;
+    text-align: center;
+    position: relative;
+    font-family: 'FF', Impact;
+    user-select: none;
+}
+
+#time {
+    font-size: 10em;
+}
+    
+#date {
+    font-size: 3em;
+}
+
+
+
+
+.bookmarks {
+    display: inline-block;
+  }
+
+.bookmarks > a > img {
+    display: inline-block;
+    margin: 100px 5px 10px 5px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    transition: 0.15s ease-in-out;
+}
+
+.bookmarks > a > img:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+  /* transform: translateY(-5px); */
+}
